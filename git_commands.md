@@ -8,6 +8,7 @@ git config -l
 создается скрытая папка .git со всякой шляпой
 2. git status состояние папки на текущий момент (показаны несохраненные изменения)
 3. git add file.py(txt,md,ipynb) добавление нового файла к отслеживаемым или измененного файла
+git rm --cached name_of_file.txt
 4. git commit -m 'comment' фиксация измененений в файле локально
 5. git branch ***-M*** main(master - стоит по умолчанию) выбор ветки необязательное действие
 6. git remote add ***origin*** https://github.com/blabla_everything_from_address_bar.git создание ссылки на репозиторий
