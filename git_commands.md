@@ -2,20 +2,24 @@ git version
 git config --global user.name 'Pasha'
 git config --global user.email 'kormeg@yandex.ru'
 git config -l
-в корневом каталоге юзера появляется файл .gitconfig с инфой
+в корневом каталоге юзера появляется файл .gitconfig с инфой (эта инфа в последствии отображается в отчете о коммите в строке author)
 
 1. git init инициализация репозитория в папке (.)
 создается скрытая папка .git со всякой шляпой
-2. git status состояние папки на текущий момент (показаны несохраненные изменения)
+2. git status состояние папки на текущий момент (показаны несохраненные изменения если они есть созданный или отредактированный - красный > add > зеленый > commit > исчезает)
+
 3. git add file.py(txt,md,ipynb) добавление нового файла к отслеживаемым или измененного файла
-git rm --cached name_of_file.txt
+git rm --cached file.txt возврат из зеленого в красное состояние.
+git restore file.txt если хочешь отменить изменения в файле и вернуть к состоянию последнего коммита (из красного в исходное до редактирования)
 4. git commit -m 'comment' фиксация измененений в файле локально
 5. git branch ***-M*** main(master - стоит по умолчанию) выбор ветки необязательное действие
 6. git remote add ***origin*** https://github.com/blabla_everything_from_address_bar.git создание ссылки на репозиторий
 7. git remote отображает ссылку origin, когда она уже существует
+переход в удаленку
 8. git push ***-u*** origin main(master) отправка файла на удаленный репозиторий
 9. git clone https://blabla_everything_from_address_bar создание клона репозитория на другом компухтере
 10. git log просмотр истории изменений
+git log -1 -p
 11. git commit --amend (esc :w q- сохранение и выход из редактора) изменяет коммент последнего коммита (этого делать не стоит в совместных проектах)
 12. git pull origin master при конфликтах изменений с разных компов заливает проект с изменениями того, кто был первым второму 
 13. git add . добавить всё
@@ -39,9 +43,12 @@ ___
 8. notepad.exe name.py ctrl+s, ctrl+w
 9. python.exe name.py 
 10. man (man mkdir or another command) мануал полный или по определенной команде ctrl+c f
+11. echo 'something' >> file.txt добавление строки в файл (>) переписывает файл
+12 cat file.txt просмотр содержимого файла в консоли 
 
 
 
+blablabla
 
 
 
