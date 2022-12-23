@@ -3,11 +3,11 @@
 ## Git  
 
 * Проверка установленной версии git (либо ее наличия)
- * git **version** 
+  * git **version** 
 * Настройка конффигурации. в корневом каталоге юзера появляется файл .gitconfig с инфой (эта инфа в последствии отображается в отчете о коммите в строке **author**)
- * git **config** --global user.name **'Pasha'**
- * git **config** --global user.email **'kormeg@yandex.ru'**
- * git **config** -l
+  * git **config** --global user.name **'Pasha'**
+  * git **config** --global user.email **'kormeg@yandex.ru'**
+  * git **config** -l
 
 ## Local Repository  
 
